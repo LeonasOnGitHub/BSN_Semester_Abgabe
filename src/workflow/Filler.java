@@ -21,9 +21,10 @@ public class Filler {
 
         OutputStream os = new FileOutputStream(FILENAME, true);
         DataOutputStream dos = new DataOutputStream(os);
-       // dos.writeInt(this.value1);
-        // dos.writeInt(this.value2);
-        dos.writeBytes("4");
-        dos.writeBytes("99");
+        dos.writeInt(this.value1);
+        dos.writeBytes(" ");
+        dos.writeInt(this.value2);
+        dos.writeBytes("\n");
+
     }
 }
